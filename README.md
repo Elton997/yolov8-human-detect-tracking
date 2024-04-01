@@ -14,8 +14,8 @@ This project demonstrates an object tracking system using YOLO (You Only Look On
 ## Installation
 
 1. Clone the repository:
-- git clone https://github.com/your_username/object-tracker.git
-  cd object-tracker
+- git clone https://github.com/Elton997/yolov8-human-detect-tracking.git
+  cd yolov8-human-detect-tracking
 
 2. Install the required dependencies:
 - pip install -r requirements.txt
