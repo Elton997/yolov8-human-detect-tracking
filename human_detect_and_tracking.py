@@ -138,7 +138,7 @@ class ObjectTracker:
 
             except Exception as e:
                 print(f"Error processing frame: {e}")
-
+        print(f"Completed processing")
         cap.release()
         out.release()
 
