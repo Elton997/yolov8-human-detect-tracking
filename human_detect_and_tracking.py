@@ -47,6 +47,7 @@ class ObjectTracker:
         return iou >= threshold
 
     def process_video(self):
+        print(f"Processing the Input Video")
         cap = cv2.VideoCapture(self.video_path)
         if not cap.isOpened():
             print("Error opening video file.")
@@ -151,6 +152,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     video_path = args.video_path
     output_path = args.output_path
+    print(f"Recieved Input_Path: {video_path} and Output_Path: {output_path}")
+    print(f"YOLO Model Used: {yolo_model_path}")
 
     tracker = ObjectTracker(yolo_model_path, deep_sort_weights, video_path, output_path)
     tracker.load_yolo_model()
@@ -158,4 +161,4 @@ if __name__ == "__main__":
     tracker.process_video()
 
 
-# python your_script.py --video_path input_video3.mp4 --output_path output_human3.mp4
+# python human_detect_and_tracking.py --video_path testing_data/Input_Data/input_video.mp4 --output_path testing_data/Output_Data/output_human.mp4
