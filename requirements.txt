@@ -3,3 +3,4 @@ ultralytics
 numpy
 opencv-python
 torch
+easydict
