@@ -9,7 +9,7 @@ from deep_sort.deep_sort import DeepSort
 
 class ObjectTracker:
     def __init__(self, yolo_model_path, deep_sort_weights, video_path, output_path):
-        self.yolo_model_path = yolo_model_path
+        self.yolo_modle_path = yolo_modle_path
         self.deep_sort_weights = deep_sort_weights
         self.video_path = video_path
         self.output_path = output_path
