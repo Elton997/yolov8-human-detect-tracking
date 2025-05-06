@@ -124,7 +124,7 @@ class ObjectTracker:
 
                 current_time = time.perf_counter()
                 elapsed = (current_time - start_time)
-                counter += 1
+                counter += 2
                 if elapsed > 1:
                     fps = counter / elapsed
                     counter = 0
@@ -141,6 +141,7 @@ class ObjectTracker:
         print(f"Completed processing")
         cap.release()
         out.release()
+        print("Released cap/out")
 
 if __name__ == "__main__":
     yolo_model_path = "yolov8n.pt"
